@@ -1,13 +1,17 @@
     h1 {
     font-size: 30px;
     font-family: arial, sans-serif;
+   text-align: center;
+    }
+    h2{
+        text-align: center;
     }
 .quem {
  margin-top: 5%;
 }
 p {
-
-    font-size: 12px;
+    text-align: center;
+    font-size: 16px;
     font-family: arial, sans-serif;
 }
 .menu {
@@ -31,8 +35,9 @@ p {
     display: block;
     color:rgb(211, 204, 204);
     text-align: center;
-    padding: 12px 16px;
+    padding: 12px 75px;
     text-decoration: none;
+    
 }
 .menu li a:hover{
     color: rgb(211, 204, 204);
@@ -85,4 +90,22 @@ width: 400px;
 padding: 1em;
 border: 1px solid #CCC;
 border-radius: 1em;
+}
+.css{
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em
+    
+}
+.table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em
+    
+}
+.contato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
