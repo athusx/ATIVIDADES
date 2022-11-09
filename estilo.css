@@ -1,4 +1,14 @@
-    h1 {
+   *{
+    margin: 0%;
+    padding: 0%;
+   }
+   nav{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    width: 100%;
+   }
+  h1 {
     font-size: 30px;
     font-family: arial, sans-serif;
    text-align: center;
@@ -29,8 +39,27 @@ p {
 .menu li {
     list-style-type:none;
     float: left;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5;
 }
-
+.menu li ul{
+     visibility: hidden;
+     opacity: 0;
+     min-width: 5rem;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0%;
+     display: none;
+     box-shadow: opx 8px 16px 0px rgb(70, 70, 70);
+}
+.menu li ul li{
+    clear: both;
+    width: 100%;
+}
 .menu li a{
     display: block;
     color:rgb(211, 204, 204);
@@ -39,10 +68,23 @@ p {
     text-decoration: none;
     
 }
-.menu li a:hover{
-    color: rgb(211, 204, 204);
-    background-color: rgb(118, 153, 85);
+.menu ul li:hover,
+.menu ul li:focus-within{
+    background-color: rgb(118, 153, 85) ;
+    cursor:pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
+.menu ul li:hover>ul,
+.menu ul li ul:focus-within>ul,
+.menu ul li ul:hover,
+.menu ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
 article{
     padding: 16px;
     margin-top: 30px;
