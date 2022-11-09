@@ -1,4 +1,4 @@
-   *{
+*{
     margin: 0%;
     padding: 0%;
    }
@@ -24,14 +24,14 @@ p {
     font-size: 16px;
     font-family: arial, sans-serif;
 }
+
 .menu {
  
     list-style-type:none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: rgb(105, 105, 105);
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -40,25 +40,30 @@ p {
     list-style-type:none;
     float: left;
     display: block;
-    padding: 1rem;
+    padding: 0;
     position: relative;
     text-decoration: none;
     transition-duration: 0.5;
 }
 .menu li ul{
      visibility: hidden;
-     opacity: 0;
+     
      min-width: 5rem;
      position: absolute;
      transition: all 0.5s ease;
      margin-top: 1rem;
      left: 0%;
-     display: none;
+     display: block;
      box-shadow: opx 8px 16px 0px rgb(70, 70, 70);
 }
 .menu li ul li{
     clear: both;
     width: 100%;
+    border:1px solid #c0c0c0;
+    display:block;
+    width: 290px;
+    background-color: #000;
+    
 }
 .menu li a{
     display: block;
@@ -71,19 +76,17 @@ p {
 .menu ul li:hover,
 .menu ul li:focus-within{
     background-color: rgb(118, 153, 85) ;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
-.menu ul li:hover>ul,
-.menu ul li ul:focus-within>ul,
-.menu ul li ul:hover,
-.menu ul li ul:focus {
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus{
     visibility: visible;
-    opacity: 1;
     display: block;
 }
-
 
 article{
     padding: 16px;
