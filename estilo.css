@@ -12,8 +12,11 @@
     font-size: 30px;
     font-family: arial, sans-serif;
    text-align: center;
+   margin-bottom: 2%;
     }
     h2{
+        margin-top: 2%;
+        margin-bottom: 2%;
         text-align: center;
     }
 .quem {
@@ -70,7 +73,7 @@ p {
     color:rgb(211, 204, 204);
     text-align: center;
     padding: 12px 75px;
-    text-decoration: none;
+    text-decoration: none; 
     
 }
 .menu ul li:hover,
@@ -90,8 +93,8 @@ ul li ul:focus{
 
 article{
     padding: 16px;
-    margin-top: 30px;
-    height: 500px;
+    margin-top: 0px;
+    height: 350px;
 }
 .active{
     background-color: rgb(118, 153, 85);
@@ -142,15 +145,25 @@ border-radius: 1em;
     width: 12em
     
 }
-.table {
+table {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 12em
+    width: 30%; 
+    margin: auto;
+    margin-top: auto;
     
 }
 .contato {
     display: block;
     margin-left: auto;
     margin-right: auto
+     
+}
+.contato ul,
+.contato ul li{
+    margin-top: 5%;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
 }
