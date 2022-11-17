@@ -1,3 +1,16 @@
+@media screen and (max-width:480px) {
+    body{
+        max-width: 480px;
+        font-size: 1.0em;
+    }
+}
+
+@media screen and (max-width:1280){
+    body{
+        max-width: 1280px;
+        font-size: 2.0em;
+    }
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -140,11 +153,207 @@ border: 1px solid #CCC;
 border-radius: 1em;
 }
 .css{
-    margin-left: auto;
-    margin-right: auto;
-    width: 12em
+    display: flex;
+    flex-direction: row;
+    
+    
     
 }
+.css img.imagem1{
+    margin: auto;
+    margin-left: 1%;
+}
+
+
+table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; 
+    margin: auto;
+    margin-top: auto;
+    
+}
+.contato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+     
+}
+.contato ul,
+.contato ul li{
+    margin-top: 5%;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width:480px) {
+    body{
+        max-width: 480px;
+        font-size: 1.0em;
+    }
+}
+
+@media screen and (max-width:1280){
+    body{
+        max-width: 1280px;
+        font-size: 2.0em;
+    }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+   }
+   nav{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    width: 100%;
+   }
+  h1 {
+    font-size: 30px;
+    font-family: arial, sans-serif;
+   text-align: center;
+   margin-bottom: 2%;
+    }
+    h2{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+.quem {
+ margin-top: 5%;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.menu {
+ 
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(105, 105, 105);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menu li {
+    list-style-type:none;
+    float: left;
+    display: block;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5;
+}
+.menu li ul{
+     visibility: hidden;
+     
+     min-width: 5rem;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0%;
+     display: block;
+     box-shadow: opx 8px 16px 0px rgb(70, 70, 70);
+}
+.menu li ul li{
+    clear: both;
+    width: 100%;
+    border:1px solid #c0c0c0;
+    display:block;
+    width: 290px;
+    background-color: #000;
+    
+}
+.menu li a{
+    display: block;
+    color:rgb(211, 204, 204);
+    text-align: center;
+    padding: 12px 75px;
+    text-decoration: none; 
+    
+}
+.menu ul li:hover,
+.menu ul li:focus-within{
+    background-color: rgb(118, 153, 85) ;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus{
+    visibility: visible;
+    display: block;
+}
+
+article{
+    padding: 16px;
+    margin-top: 0px;
+    height: 350px;
+}
+.active{
+    background-color: rgb(118, 153, 85);
+}
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: .5em;
+}
+textarea {
+vertical-align: top;
+height: 5em;
+resize: vertical;
+}
+input:focus, textarea:focus {
+
+border-color: #000;
+}
+input, textarea {
+font: 1em sans-serif;
+width: 300px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: 1px solid #999;
+}
+label {
+
+display: inline-block;
+width: 90px;
+text-align: right;
+}
+form div + div {
+margin-top: 1em;
+}
+form {
+
+margin: 0 auto;
+width: 400px;
+
+padding: 1em;
+border: 1px solid #CCC;
+border-radius: 1em;
+}
+.css{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+.css img.imagem1{
+    margin: auto;
+    margin-left: 1%;
+}
+
+
 table {
     display: block;
     margin-left: auto;
