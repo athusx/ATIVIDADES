@@ -10,9 +10,9 @@
 </head>
 <body> 
       
-         
-     <header>
-       
+    <main id="pagina">
+     <header id="cabecalho">
+        
         <nav class="menu">
             <div>
           <ul>
@@ -33,7 +33,7 @@
          
            
     </header>     
-     <main>
+     <main id="conteudo">
         <div class="quem">
         <h1>Quem sou eu?<a name="home"></a></h1>
         </div>
@@ -63,7 +63,7 @@
         </div>
         <p>Me chamo <b>Athus</b>, tenho 18 anos, nascido e criado em Palmas-TO</p>
      
-        <article>
+        <article id="conteudo2">
         <h2>Meus projetos<a name="meusprojetos"></a></h2>
         <p>  Pretendo quando me formar, ingressar em um concurso para a área ou em um emprego bom e adquirir a tão sonhada independência financeira. Penso em fazer mais uma graduação, no qual o curso é ciências da computação, mas é um pensamento a ser analisado</p>
         
@@ -104,7 +104,7 @@
         </table>
     
     </main>
-    <footer>
+    <footer id="rodape">
         <h2>Contato<a name="contato"></a></h2>
         <div class="contato">
             <ul>
@@ -117,6 +117,18 @@
     </div>
 </article>
         </footer>
-    
+    </main> 
+    <script>
+        const numero= prompt("Digite um número")
+        if(numero>0){
+            if(numero % 2 == 0 ){
+                alert(numero+ " é positivo e par")
+            }
+            alert(numero+ " é positivo e impar")
+        }
+        else{
+            alert(numero+ " é negativo...")
+        }
+    </script>
 </body>
 </html>
